@@ -1,0 +1,8 @@
+#ignore automatically generated pyc files
+*.pyc
+
+#ignore swap files
+*.swp
+
+#do not record private credentials in public repository
+credentials.py
