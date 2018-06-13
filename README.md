@@ -2,7 +2,7 @@
 This is a Twitter bot that replies with some variant of "no u" to any reply that contains "no u".
 
 ## How to set up:
-### 1. Install the tweepy dependancy for python
+### 1. Install the tweepy dependency for python
 ``
 pip install -r "requirements.txt"
 ``
