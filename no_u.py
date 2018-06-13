@@ -41,6 +41,10 @@ class ReplyStreamListener(StreamListener):
             if "RT:" in statusText:
                 return
 
+            # only replies to tweets directed at self
+            if USER_HANDLE not in status.text:
+                return
+
             # patterns that trigger a response:
             triggers = ['no u', 'no you']
 
