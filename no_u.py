@@ -15,7 +15,7 @@ from credentials import CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET
 import random
 
 
-class StdOutListener(StreamListener):
+class ReplyStreamListener(StreamListener):
     def __init__(self):
         self.wait = 0
         self.auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
@@ -100,7 +100,7 @@ class StdOutListener(StreamListener):
 
 
 if __name__ == '__main__':
-    listener = StdOutListener()
+    listener = ReplyStreamListener()
 
     stream = Stream(listener.auth, listener)
     stream.userstream()
