@@ -84,7 +84,7 @@ class StdOutListener(StreamListener):
         print(status)
 
 if __name__ == '__main__':
-    listener = ReplyStreamListener()
+    listener = StdOutListener()
 
     stream = Stream(listener.auth, listener)
     stream.userstream()
